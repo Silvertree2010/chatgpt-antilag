@@ -1,0 +1,148 @@
+:root {
+  color-scheme: light;
+  --bg: #f5efe4;
+  --panel: rgba(255, 250, 242, 0.92);
+  --text: #1f1a17;
+  --muted: #6b5f56;
+  --line: rgba(99, 76, 57, 0.18);
+  --accent: #bb5a2a;
+  --accent-strong: #8f3e17;
+  --shadow: 0 18px 45px rgba(82, 53, 29, 0.18);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-width: 340px;
+  font-family: "Avenir Next", "Segoe UI", sans-serif;
+  color: var(--text);
+  background:
+    radial-gradient(circle at top left, rgba(255, 220, 180, 0.7), transparent 42%),
+    linear-gradient(160deg, #f7f0e5 0%, #efe4d3 100%);
+}
+
+.panel {
+  padding: 18px;
+}
+
+.hero {
+  padding: 18px;
+  border: 1px solid var(--line);
+  border-radius: 20px;
+  background: var(--panel);
+  box-shadow: var(--shadow);
+}
+
+.eyebrow {
+  margin: 0 0 8px;
+  font-size: 11px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--accent-strong);
+}
+
+.hero h1 {
+  margin: 0;
+  font-size: 28px;
+  line-height: 1;
+}
+
+.subtitle {
+  margin: 10px 0 0;
+  color: var(--muted);
+  font-size: 13px;
+  line-height: 1.45;
+}
+
+.setting {
+  display: block;
+  margin-top: 14px;
+  padding: 14px;
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  background: rgba(255, 251, 247, 0.86);
+}
+
+.toggle-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.label {
+  display: block;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.hint {
+  display: block;
+  margin-top: 4px;
+  font-size: 12px;
+  line-height: 1.4;
+  color: var(--muted);
+}
+
+input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+  accent-color: var(--accent);
+}
+
+input[type="range"] {
+  width: 100%;
+  margin-top: 14px;
+  accent-color: var(--accent);
+}
+
+.range-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 6px;
+  font-size: 12px;
+  color: var(--muted);
+}
+
+#keepRecentTurnsValue {
+  min-width: 28px;
+  text-align: center;
+  color: var(--accent-strong);
+  font-weight: 700;
+}
+
+.apply-button {
+  width: 100%;
+  margin-top: 14px;
+  padding: 12px 14px;
+  border: 0;
+  border-radius: 14px;
+  background: linear-gradient(135deg, var(--accent) 0%, var(--accent-strong) 100%);
+  color: #fff8f1;
+  font: inherit;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.apply-button:hover {
+  filter: brightness(1.03);
+}
+
+.status {
+  min-height: 18px;
+  margin: 10px 2px 0;
+  font-size: 12px;
+  color: var(--muted);
+}
+
+.credit {
+  margin: 8px 2px 0;
+  font-size: 11px;
+  text-align: center;
+  color: var(--muted);
+  opacity: 0.8;
+}

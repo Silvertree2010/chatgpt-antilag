@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ChatGPT Anti-Lag</title>
+    <link rel="stylesheet" href="popup.css">
+  </head>
+  <body>
+    <main class="panel">
+      <div class="hero">
+        <p class="eyebrow">ChatGPT Performance</p>
+        <h1>Anti-Lag</h1>
+        <p class="subtitle">Hides older messages to keep long chats lighter and more responsive.</p>
+      </div>
+
+      <label class="setting toggle-row">
+        <div>
+          <span class="label">Performance Mode</span>
+          <span class="hint">Automatically hides older turns in long conversations.</span>
+        </div>
+        <input id="enabled" type="checkbox">
+      </label>
+
+      <label class="setting">
+        <span class="label">Visible recent turns</span>
+        <span class="hint">Only this many recent turns stay visible at once.</span>
+        <input id="keepRecentTurns" type="range" min="4" max="100" step="1">
+        <div class="range-row">
+          <span>4</span>
+          <output id="keepRecentTurnsValue">12</output>
+          <span>100</span>
+        </div>
+      </label>
+      <p id="status" class="status" aria-live="polite"></p>
+      <p class="credit">coded with codec 5.4</p>
+    </main>
+
+    <script src="popup.js"></script>
+  </body>
+</html>
